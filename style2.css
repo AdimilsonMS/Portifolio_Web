@@ -213,7 +213,7 @@ a {
     @media (max-width: 426px) {
         body {
             padding-right: 0rem;
-            padding-left: 0rem;   
+            padding-left: 2rem;   
         }
     
         .home {
