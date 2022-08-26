@@ -68,7 +68,7 @@ h2 {
 
 .social-media a {
     text-decoration: none;
-    color: #bea4a4;
+    color: #dbcccc;
     padding: 1rem 4rem;
     border: 1px solid #1e1e2a;
     min-width: 4rem;
@@ -76,6 +76,7 @@ h2 {
     align-items: center;
     justify-content: center;
     transition: .5s ease-in-out;
+    font-size: 18px;
 }
 
 a:hover {
@@ -375,8 +376,8 @@ a:hover {
         margin-left: -3rem;
     }
     .card {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     .card:hover > .card-wrapper p {
         font-size: 3.5px;
@@ -398,7 +399,7 @@ a:hover {
     }
 
     .header-container {
-        height: 62vh;
+        height: 55vh;
         width: 100vw;
         background-color: #453f3f;
         background-image: url("./img/4.png");

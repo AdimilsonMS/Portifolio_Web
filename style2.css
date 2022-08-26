@@ -132,14 +132,127 @@ a {
     background: rgb(101, 104, 105);
   }
 
-  @media (max-width: 768px) {
+
+    @media (max-width: 1440px) {
+        body {
+            padding-right: 4rem;
+            padding-left: 50rem;   
+        }
+    
+        .home {
+            margin-right: 121rem;
+            margin-top: -6rem;
+        }
+
+    }
+
+
+    @media (max-width: 1025px) {
+
+        html {
+            font-size: 65%;
+        }
+
+        body {
+            padding-right: 4rem;
+            padding-left: 40rem;   
+        }
+    
+        .home {
+            margin-right: 120rem;
+            margin-top: -10rem;
+        }
+
+    }
+
+  @media (max-width: 769px) {
     html {
         font-size: 60%;
     }
 
     .home {
-        margin-right: 102rem;
+        margin-right: 100rem;
         margin-top: -12rem;
     }
-  }
+
+
+    body {
+        padding-right: 0rem;
+        padding-left: 35rem;   
+    }
+
+    
+
+}
+    @media (max-width: 637px) {
+        
+    body {
+        padding-right: 0rem;
+        padding-left: 0rem;   
+    }
+
+    .home {
+        margin-right: 49rem;
+        margin-top: -12rem;
+    }
+    }
+
+    @media (max-width: 530px) {
+        body {
+            padding-right: 0rem;
+            padding-left: 0rem;   
+        }
+    
+        .home {
+            margin-right: 40rem;
+            margin-top: -12rem;
+        }
+
+    }
+
+    @media (max-width: 426px) {
+        body {
+            padding-right: 0rem;
+            padding-left: 0rem;   
+        }
+    
+        .home {
+            margin-right: 29rem;
+            margin-top: -12rem;
+        }
+
+    }
+
+    @media (max-width: 376px) {
+        body {
+            padding-right: 0rem;
+            padding-left: 3rem;   
+        }
+    
+        .home {
+            margin-right: 25rem;
+            margin-top: -12rem;
+        }
+
+    }
+
+    @media (max-width: 321px) {
+        body {
+            padding-right: 0rem;
+            padding-left: 3rem;   
+        }
+    
+        .home {
+            margin-right: 22rem;
+            margin-top: -12rem;
+        }
+
+    }
+
+    
+
+    
+    
+
+  
 
