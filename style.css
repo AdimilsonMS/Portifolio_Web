@@ -47,6 +47,7 @@ svg {
 
 .menu ul li{
     display: inline-block;
+    
 }
 
 .menu ul li a {
@@ -54,6 +55,7 @@ svg {
     color: white;
     font-weight: lighter;
     padding: 0 20px;
+    
 }
 
 .header-container {
@@ -138,7 +140,6 @@ h2 {
 
 a:hover {
     background-color: none;
-
 }
 
 
@@ -318,16 +319,17 @@ a:hover {
         opacity: 1;
     }
 }
-@media (max-width: 425px) {
-    html {
-        font-size: 30%;
+@media (max-width: 432px) {
+
+    .container1 img {
+        max-width: 280px;
     }
     h1 {
-        font-size: 15px;
+        font-size: 26px;
         margin-left: -1.5rem;
     }
     h2 {
-        font-size: 30px;
+        font-size: 20px;
         margin-left: -3rem;
     }
     .card {
@@ -363,21 +365,27 @@ a:hover {
         flex-wrap: nowrap;
         align-content: flex-start;
         flex-direction: column;
+        margin-top: 10rem;
     }
     .footer {
         width: 100%;
         height: 50px;
     }
-    .logo {
-        padding:  40px;
-        font-size: 9rem;
-        display:flex;
-        margin-left: 2rem;
-        margin-top: -3rem;
+
+    .menu {
+        padding: 0 2ex;
+        margin-top: -1.5rem;
     }
 
     .menu-items ul li a {
-        font-size: 20px;
+        font-size: 13px;
+        padding: 0 1ex;
+    }
+
+    .logo{
+        margin-top: -1.5rem;
+        font-size: 13px;
+        padding: 0 2ex;
     }
     main {
         width: 100%;
