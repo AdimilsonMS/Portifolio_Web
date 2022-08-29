@@ -407,8 +407,9 @@ a:hover {
     .content{
         width: calc(50% - 2rem);
         background-color: rgb(255, 255, 255);
-        height: 10rem;
+        height: 15rem;
         box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.284);
+        font-size: 15px;
     
     }
     
