@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Portifolio</title>
 </head>
 <body>
     <header>
-        <main class="mine">
-        <div class="checkbox-wrapper">
-                <div class="nav">
-                    <div class="logo"> 
-                      LOGO
-                    </div>
-                        <div class="menu">
-                            <nav class="menu-items">
-                                <ul>
-                                   <li>
-                                        <a href="index.html">HOME</a>
-                                    </li>
-                                    <li>
-                                        <a href="index2.html">CONTATO</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">PORTIFOLIO</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                </div>
-            </div>
+        <div class="logo">
+            <h2>coding tonight</h2>
         </div>
-    </main>
+        <div class="navigation">
+            <input type="checkbox" id="nav-checkbox">
+            <label for="nav-checkbox" class="nav-toggle">
+                <img src="open.png" alt="open menu" class="open">
+                <img src="close.png" alt="close menu" class="close">
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+      <script>
+        $(document).ready(function(){
+            $(window).bind('scroll', function(){
+                var gap = 50;
+                if($(window).scrollTop() > gap){
+                    $('header').addClass('active')
+                } else{
+                    $('header').removeClass('active');
+                }
+            });
+        });
+       </script>  
     </header>
-    
-    <header class="header-container">
+    <div class="header-container">
         <div class="container1">
             <img src="./img/3.png" width="100%" height="100%" />
         </div>
@@ -78,7 +82,7 @@
                 </a>
             </div>
         </div>
-    </header>
+    </div>
         <div class="MuiBox" id="aboutme">
             <div class="MuiContainer">
                 <div>
