@@ -8,37 +8,38 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h2>coding tonight</h2>
-        </div>
-        <div class="navigation">
-            <input type="checkbox" id="nav-checkbox">
-            <label for="nav-checkbox" class="nav-toggle">
-                <img src="open.png" alt="open menu" class="open">
-                <img src="close.png" alt="close menu" class="close">
-            </label>
+<header>
+    <div class="logo">
+        <h2>coding tonight</h2>
+    </div>
+    <div class="navigation">
+        <input type="checkbox" id="nav-checkbox">
+        <label for="nav-checkbox" class="nav-toggle">
+            <img src="open.png" alt="open menu" class="open">
+            <img src="close.png" alt="close menu" class="close">
+        </label>
 
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </div>
-      <script>
-        $(document).ready(function(){
-            $(window).bind('scroll', function(){
-                var gap = 50;
-                if($(window).scrollTop() > gap){
-                    $('header').addClass('active')
-                } else{
-                    $('header').removeClass('active');
-                }
-            });
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $(window).bind('scroll', function(){
+            var gap = 50;
+            if($(window).scrollTop() > gap){
+                $('header').addClass('active')
+            } else{
+                $('header').removeClass('active');
+            }
         });
-       </script>  
-    </header>
+    });
+    </script>  
+</header>
+</main>
     <div class="header-container">
         <div class="container1">
             <img src="./img/3.png" width="100%" height="100%" />
@@ -96,11 +97,11 @@
                 </div>
             </div>
         </div>
-        <div class="jss19" id="portfolio">
+        <div id="portfolio">
             <h4 class="portifolio">Portfolio</h4>
         </div>
     <main class="container">
-        <h5 class="topprojects">My top projects</h5>
+        <h6>My top projects</h6>
         <div class="card-container">
             <a href="https://github.com/AdimilsonMS/Google.homePage">
             <div class="card">
@@ -131,12 +132,13 @@
                 nostrum cupiditate debitis est vel corporis, ullam temporibus explicabo magni, ipsam dolorem praesentium maiores maxime aut fugiat.
             </div>
         </div>
+        <h5>timeline</h5>
         <div class="container">
             <div class="top-section">
-                <h1>Timeline</h1>
             </div>
         </div>
         <div class="timeline">
+            
             <div class="line"></div>
             <div class="section">
                 <div class="bead"></div>
@@ -184,12 +186,10 @@
                     </p>
                 </div>
             </div>
-            
+         <script src="timeline.js"></script>   
         </div>
-        
-        <script src="timeline.js"></script>
-    
     </main>
+</main>
     <footer class="footer">
         Feito por Adimilson Miranda
     </footer>
