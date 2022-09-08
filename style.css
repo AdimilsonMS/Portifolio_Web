@@ -674,6 +674,7 @@ h1{
 
 @media only screen and (max-width: 600px){
 
+
     .bead{
         left: 50.02%;
     }
@@ -747,6 +748,9 @@ h1{
 @media(max-width: 432px){
 
     /* MENU */
+    .timeline{
+        margin-bottom: 6rem;
+    }
 
     .MuiBox{
         padding-top: 3.5rem;
