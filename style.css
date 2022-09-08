@@ -682,11 +682,8 @@ h1{
         display: block;
     }
 
-    h2{
+    .logo h2{
         font-size: 15px;
-    }
-
-    .logo{
         margin-left: 10px;
     }
 
@@ -758,8 +755,10 @@ h1{
     header{
         padding: 6px 0;
     }
-    h2 {
+
+    .logo h2 {
         margin-top: 9px;
+        margin-bottom: 2rem;
     }
 
     .container1 img {
