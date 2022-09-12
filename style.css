@@ -629,12 +629,13 @@ h1{
         background-color: #0d1f38;
         width: 106%;
         margin-left: -4rem;
-        height: 4rem;
+        height: 4.5rem;
         padding: 0 1rem;
         display: grid;
         align-content: center;
         transition: 0.4s;
         box-shadow: 0 -1px 12px rgba(59, 59, 59, 0.25);
+        font-size: 15px;
     }
 
     .nav{
