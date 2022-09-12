@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link 
+      href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' 
+      rel='stylesheet'
+    />
     <title>Portifolio</title>
 </head>
 <body>
-<header>
-    <nav>
-        <div class="logo">
-        <h2>Adimilson Miranda</h2>
-    </div>
-    <div class="navigation">
-        <input type="checkbox" id="nav-checkbox">
-        <label for="nav-checkbox" class="nav-toggle">
-            <img src="open.png" alt="open menu" class="open">
-            <img src="close.png" alt="close menu" class="close">
-        </label>
-
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#aboutme">sobre mim</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#timeline">timeline</a></li>
-            <li><a href="index2.html">Contact</a></li>
-        </ul>
-    </div>
-    <script>
-    $(document).ready(function(){
-        $(window).bind('scroll', function(){
-            var gap = 50;
-            if($(window).scrollTop() > gap){
-                $('header').addClass('active')
-            } else{
-                $('header').removeClass('active');
-            }
-        });
-    });
-    </script>  
-    </nav>
-    
-</header>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">NavBar</a>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link">
+                            <i class='bx bx-home nav_icon'></i>
+                            <span class="nav_nome">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#timeline" class="nav_link">
+                            <i class='bx bx-user nav_icon'></i>
+                            <span class="nav_nome">Timeline</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portifolio" class="nav_link">
+                            <i class='bx bx-book-content nav_icon'></i>
+                            <span class="nav_nome">Portifolio</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="index2.html" class="nav_link">
+                            <i class='bx bx-message-square-dots nav_icon' ></i>
+                            <span class="nav_nome">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </main>
     <div class="header-container">
         <div class="container1">
@@ -103,7 +104,7 @@
         <div>
             <h4 id="portifolio" class="portifolio">Portfolio</h4>
         </div>
-    <main class="container">
+    <main class="container2">
         <h6>My top projects</h6>
         <div class="card-container">
             <a href="https://github.com/AdimilsonMS/Google.homePage">
@@ -119,7 +120,9 @@
                 nostrum cupiditate debitis est vel corporis, ullam temporibus explicabo magni, ipsam dolorem praesentium maiores maxime aut fugiat.
             </div>
         </div>
-        <h6 id="timeline" >timeline</h6>
+        
+        <section id="timeline">
+            <h6 id="timeline">timeline</h6>
         <div class="timeline">
             <div class="line"></div>
             <div class="section">
@@ -164,10 +167,18 @@
             </div>
          <script src="timeline.js"></script>   
         </div>
+        </section>
     </main>
 </main>
     <footer class="footer">
         Feito por Adimilson Miranda
     </footer>
+
+    <script type="text/javascript">    
+        $('.js-scroll-trigger').click(function() {
+ $('.navbar-collapse').collapse('hide');
+});
+   </script>
+
 </body>
 </html>
